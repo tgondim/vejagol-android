@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">VejaGol!</string>
+    <string name="app_name">VejaGol</string>
+    <string name="carregando">Cargando...</string>
+    <string name="sim">Sí</string>
+    <string name="nao">No</string>
+    <string name="ordenacao">Ordenación</string>
+    <string name="paises">Ligas</string>
+    <string name="ordenar_por">Ordenar por</string>
+   	
+   	<string-array name="itens_ordenacao">
+   	    <item>Fecha</item>
+   	    <item>Liga</item>
+   	    <item>Equipo Local</item>
+   	    <item>Invitado Equipo</item>
+   	</string-array>
+   	
+    <string name="link_versao_completa">http://www.vejagol.com</string>
+    <string name="erro_de_conexao">Error de conexión. Por favor, inténtelo de nuevo más tarde.</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="opcoes">Opciones</string>
+    <string name="melhor_da_semana">Mejor de la Semana</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="carregando_mais_jogos">Cargando más juegos...</string>
+    <string name="impossivel_carregar">No se puede cargar juegos. Haga clic aquí para intentarlo de nuevo.</string>
+    <string name="sem_jogos_para_filtro">No hay juegos para los países seleccionados.</string>
+    <string name="video_init">Inicialización...</string>
+    <string name="video_detect">La detección de ancho de banda disponible para descargar el vídeo.</string>
+    <string name="video_token">Recuperar token de YouTube.</string>
+    <string name="video_loband">Bufferizando bajo ancho de banda.</string>
+    <string name="video_hiband">Bufferizando alto ancho de banda.</string>
+    <string name="video_error_title">Error</string>
+    <string name="video_error_msg">Lo siento. Ha ocurrido un error.</string>
+    <string name="share_via">Parte via</string>
+    <string name="share_subject">Echa un vistazo a Vejagol!</string>
+    <string name="share_msgbody">Vea los goles de todos los equipos de fútbol de todo el mundo! http://vejagol.com</string>
+</resources>
+        

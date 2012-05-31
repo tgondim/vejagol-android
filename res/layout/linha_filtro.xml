@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center|center_horizontal"
+    android:gravity="center"
+    android:id="@+id/llLinhaFiltro" 
+    android:background="#FFFFFF">
+    <CheckBox
+        android:id="@+id/cbFiltro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:clickable="true" android:layout_gravity="left"/>
+   
+ 	<ImageView
+            android:id="@+id/ivBandeiraFiltro"
+            android:layout_width="21dp"
+            android:layout_height="15dp"
+            android:maxHeight="20dp"
+            android:maxWidth="25dp"
+            android:minHeight="5dp"
+            android:minWidth="10dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/br" android:layout_gravity="right|center_vertical"/>
+
+</LinearLayout>

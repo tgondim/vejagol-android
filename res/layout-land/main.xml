@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/llVejaGol"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    >
+	<RelativeLayout
+        android:id="@+id/rlTopTab"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/topbar" >
+
+        <ImageView
+            android:id="@+id/ivVejagol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/icon" />
+
+        <ImageView
+            android:id="@+id/ibShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/share" />
+
+    </RelativeLayout>
+	<ListView android:layout_height="wrap_content" 
+		android:id="@+id/listaJogos" 
+		android:layout_width="fill_parent"
+		android:divider="@color/divider"
+		android:dividerHeight="3px"	
+		android:layout_weight="2">
+	</ListView>
+
+</LinearLayout>

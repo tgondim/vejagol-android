@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">VejaGol!</string>
+    <string name="app_name">VejaGol</string>
+    <string name="carregando">Loading...</string>
+    <string name="sim">Yes</string>
+    <string name="nao">No</string>
+    <string name="ordenacao">Order</string>
+    <string name="paises">Leagues</string>
+    <string name="ordenar_por">Order by</string>
+   	
+   	<string-array name="itens_ordenacao">
+   	    <item>Date</item>
+   	    <item>League</item>
+   	    <item>Home Team</item>
+   	    <item>Guest Team</item>
+   	</string-array>
+   	
+    <string name="link_versao_completa">http://www.vejagol.com</string>
+    <string name="erro_de_conexao">Connection error. Please try again later.</string>
+    <string name="confirmar">Ok</string>
+    <string name="opcoes">Options</string>
+    <string name="melhor_da_semana">Bests of the week</string>
+    <string name="cancelar">Cancel</string>
+    <string name="carregando_mais_jogos">Loading more games...</string>
+    <string name="impossivel_carregar">Unable to load games. Click to try again.</string>
+    <string name="sem_jogos_para_filtro">No games for the selected countries.</string>
+    <string name="video_init">Initializing...</string>
+    <string name="video_detect">Detecting the bandwidth available to download video.</string>
+    <string name="video_token">Retrieving token from YouTube.</string>
+    <string name="video_loband">Buffering low-bandwidth.</string>
+    <string name="video_hiband">Buffering hi-bandwidth.</string>
+    <string name="video_error_title">Error</string>
+    <string name="video_error_msg">Sorry. An error has ocurred.</string>
+    <string name="share_via">Share via</string>
+    <string name="share_subject">Check out Vejagol!</string>
+    <string name="share_msgbody">Watch the goals of all soccer teams around the world! http://vejagol.com</string>
+</resources>
+        

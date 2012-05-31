@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">VejaGol!</string>
+    <string name="app_name">VejaGol</string>
+    <string name="carregando">Carregando...</string>
+    <string name="sim">Sim</string>
+    <string name="nao">Não</string>
+    <string name="ordenacao">Ordenação</string>
+    <string name="paises">Ligas</string>
+    <string name="ordenar_por">Ordenar por</string>
+   	
+   	<string-array name="itens_ordenacao">
+   	    <item>Data</item>
+   	    <item>Liga</item>
+   	    <item>Time Casa</item>
+   	    <item>Time Visitante</item>
+   	</string-array>
+   	
+    <string name="link_versao_completa">http://www.vejagol.com</string>
+    <string name="erro_de_conexao">Erro de conexão. Por favor, tente novamente mais tarde.</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="opcoes">Opções</string>
+    <string name="melhor_da_semana">Melhor da Semana</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="carregando_mais_jogos">Carregando mais jogos...</string>
+    <string name="impossivel_carregar">Não foi possível carregar os jogos. Clique para tentar novamente.</string>
+    <string name="sem_jogos_para_filtro">Não existem jogos para os países selecionados.</string>
+    <string name="video_init">Inicializando...</string>
+    <string name="video_detect">Detectando a bandwidth disponível para baixar vídeo.</string>
+    <string name="video_token">Recuperando token do youtube.</string>
+    <string name="video_loband">Bufferizando baixa-bandwidth.</string>
+    <string name="video_hiband">Bufferizando alta-bandwidth.</string>
+    <string name="video_error_title">Erro</string>
+    <string name="video_error_msg">Desculpe. Ocorreu um erro.</string>
+    <string name="share_via">Compartilhar via</string>
+    <string name="share_subject">Confira Vejagol!</string>
+    <string name="share_msgbody">Veja os gols de todos os times de futebol ao redor do mundo!! http://vejagol.com</string>
+</resources>
+        

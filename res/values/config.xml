@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="url_webservice">http://vejagol.com/VejaGolWS/services/VejaGolWS</string>
+    <string name="namespace_webservice">http://webservices.vejagol.com</string>
+    <string name="chave_vejagol_webservice">xI7B+3va7ghx+PSI6qqISet5Vb2Wi2yxqZTg4kcnE/V9OpUnyVm2Rg==</string>
+    <string name="listar_jogos_webservice_operation">getListaJogos</string>
+    <string name="get_ultimo_melhor_da_semana_webservice_operation">getUltimoMelhorDaSemana</string>
+</resources>
