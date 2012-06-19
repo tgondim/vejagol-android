@@ -82,9 +82,11 @@ public class JogoAdapter extends BaseAdapter {
 		  bandeiras.put("Hungria", R.drawable.hu);
 		  bandeiras.put("Latvia", R.drawable.latvia);
 		  bandeiras.put("Noruega", R.drawable.no);
+		  bandeiras.put("Finlandia", R.drawable.finland);
 		  bandeiras.put("Suecia", R.drawable.se);
 		  bandeiras.put("UEFA", R.drawable.uefa);
 		  bandeiras.put("Amigavel", R.drawable.friendly);
+		  bandeiras.put("Copa Libertadores", R.drawable.libertadores);
 	}
 	
 	public JogoAdapter(Context newContext) {
