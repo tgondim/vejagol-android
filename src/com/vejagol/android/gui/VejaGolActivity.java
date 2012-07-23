@@ -102,7 +102,7 @@ public class VejaGolActivity extends Activity implements OnItemClickListener,
 				
 				LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT);
 				if (VejaGolActivity.this.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
-					lp.weight = 2f;						
+					lp.weight = 1.8f;						
 				} else {
 					lp.weight = 6f;			
 				}
@@ -143,7 +143,7 @@ public class VejaGolActivity extends Activity implements OnItemClickListener,
 				
 				LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT);
 				if (VejaGolActivity.this.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
-					lp.weight = 1.5f;						
+					lp.weight = 1.3f;						
 				} else {
 					lp.weight = 4.3f;			
 				}
