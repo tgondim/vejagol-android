@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="layout_background">#CFCFCF</color>
+    <color name="layout_background">#191919</color>
     <color name="divider">#9C9C9C</color>
     <color name="selected">#696969</color>
-    <color name="texto_linha_liga">#008B00</color>
+    <color name="texto_linha_liga">#000000</color>
     <color name="texto_linha_data">#000000</color>
     <color name="texto_linha_jogo">#000000</color>
     <color name="texto_linha_campeonato">#000000</color>
@@ -12,4 +12,5 @@
     <color name="texto_extras">#FFFFE0</color>
     <color name="texto_link">#00FFFF</color>
     <color name="texto_clique_pra_baixar">#00BFFF</color>
+    <color name="texto_carregando_mais_jogos">#9C9C9C</color>
 </resources>

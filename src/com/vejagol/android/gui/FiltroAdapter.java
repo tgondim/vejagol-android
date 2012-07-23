@@ -70,7 +70,6 @@ public class FiltroAdapter extends BaseAdapter {
 			}
 		});
 		ivBandeiraFiltro.setImageDrawable(resources.getDrawable(JogoAdapter.bandeiras.get(filtro)));
-		
 		return view;
 	}
 

@@ -3,7 +3,8 @@
     android:layout_width="fill_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" 
-    android:gravity="center">
+    android:gravity="center"
+    android:background="@drawable/carregando">
 
     <TextView
         android:id="@+id/txtImpossivel"

@@ -8,15 +8,11 @@ import java.util.List;
 import android.content.Context;
 import android.content.res.Resources;
 import android.util.Log;
-import android.util.TypedValue;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
-import android.widget.TableLayout.LayoutParams;
 import android.widget.TextView;
 
 import com.vejagol.android.R;
@@ -117,51 +113,64 @@ public class JogoAdapter extends BaseAdapter {
 		
 		View view = LayoutInflater.from(context).inflate(R.layout.linha_jogo, null);
 		
-		RelativeLayout relativeLayout = (RelativeLayout)view.findViewById(R.id.rlLinhaVejaGol);
 		TextView txtData = (TextView)view.findViewById(R.id.txtData);
 		TextView txtLiga = (TextView)view.findViewById(R.id.txtLiga);
+		TextView txtCampeonato = (TextView)view.findViewById(R.id.txtCampeonato);
 		ImageView ivBandeira = (ImageView)view.findViewById(R.id.ivBandeira);
 		TextView txtPlacar = (TextView)view.findViewById(R.id.txtPlacar);
 		
 		String data = jogo.getData().get(Calendar.DAY_OF_MONTH) + "/" 
 						+ (jogo.getData().get(Calendar.MONTH)+1) + "/" 
 						+ jogo.getData().get(Calendar.YEAR);
-		String hora = String.format("%02d", jogo.getData().get(Calendar.HOUR)) + ":" 
-						+ String.format("%02d", jogo.getData().get(Calendar.MINUTE)) 
-						+ (jogo.getData().get(Calendar.AM) == 0 ? "am" : "pm");
+//		String hora = String.format("%02d", jogo.getData().get(Calendar.HOUR)) + ":" 
+//					+ String.format("%02d", jogo.getData().get(Calendar.MINUTE)) 
+//					+ (jogo.getData().get(Calendar.AM) == 0 ? "am" : "pm");
 		
-		txtData.setText(data + " - " + hora);
-		txtData.setTextColor(context.getResources().getColor(R.color.texto_linha_data));
-		Log.i("JogoAdapter", "data=" + data + " hora=" + hora);
+		txtData.setText(data);
+//		txtData.setTextColor(context.getResources().getColor(R.color.texto_linha_data));
+		Log.i("JogoAdapter", "data=" + data);
 		Integer bandeiraId = JogoAdapter.bandeiras.get(jogo.getLiga());
 		if (bandeiraId == null) {
 			bandeiraId = R.drawable.world;;
 		}
 		ivBandeira.setImageDrawable(resources.getDrawable(bandeiraId));
-		txtLiga.setText(jogo.getLiga());
-		txtLiga.setTextColor(context.getResources().getColor(R.color.texto_linha_liga));
-		txtPlacar.setText(jogo.getTimeCasa() + " " 
+		
+		if (jogo.getCampeonato().length() < 11) {
+			txtCampeonato.setText(jogo.getCampeonato());
+		} else {
+			txtCampeonato.setText(jogo.getCampeonato().substring(0, 11));
+		}
+		
+		if (jogo.getLiga().length() < 12) {
+			txtLiga.setText(jogo.getLiga());
+		} else {
+			txtLiga.setText(jogo.getLiga().substring(0, 12));
+		}
+		
+//		txtLiga.setTextColor(context.getResources().getColor(R.color.texto_linha_liga));
+		txtPlacar.setText((jogo.getTimeCasa().length() < 13 ? jogo.getTimeCasa() : jogo.getTimeCasa().substring(0, 13)) + " " 
 				+ String.valueOf(jogo.getPlacarCasa()) 
 				+ " X " 
 				+ String.valueOf(jogo.getPlacarVisitante()) 
-				+ " " + jogo.getTimeVisitante());
-		txtPlacar.setTextColor(context.getResources().getColor(R.color.texto_linha_jogo));
+				+ " " + (jogo.getTimeVisitante().length() < 13 ? jogo.getTimeVisitante() : jogo.getTimeVisitante().substring(0, 13)));
+//		txtPlacar.setTextColor(context.getResources().getColor(R.color.texto_linha_jogo));
 		if (!jogo.getCampeonato().equals("")) {
-			TextView txtCampeonato = new TextView(context);
-			relativeLayout.addView(txtCampeonato);
 			txtCampeonato.setVisibility(View.VISIBLE);
-			txtCampeonato.setGravity(Gravity.CENTER);
-			LayoutParams layoutParams = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
-			RelativeLayout.LayoutParams relativeLayoutParams = new RelativeLayout.LayoutParams(layoutParams);
-			relativeLayoutParams.addRule(RelativeLayout.BELOW, txtPlacar.getId());
-			txtCampeonato.setLayoutParams(relativeLayoutParams);
-			txtCampeonato.setTextSize(TypedValue.COMPLEX_UNIT_PX, 20);
-			txtCampeonato.setText(jogo.getCampeonato());
-			txtCampeonato.setTextColor(context.getResources().getColor(R.color.texto_linha_campeonato));
+			if (jogo.getCampeonato().length() < 11) {
+				txtCampeonato.setText(jogo.getCampeonato());
+			} else {
+				txtCampeonato.setText(jogo.getCampeonato().substring(0, 11));
+			}
 			view.setTag(jogo.getId());
-		} 		
-		view.setBackgroundResource(R.color.lista_jogos);
+		} else {			
+			txtCampeonato.setVisibility(View.GONE);
+		}
+		//view.setBackgroundResource(R.color.lista_jogos);
 		return view;
+	}
+	
+	public List<Jogo> getListaJogos() {
+		return this.listaJogos;
 	}
 	
 	public void insert(Jogo newJogo) {

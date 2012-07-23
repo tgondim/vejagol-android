@@ -5,7 +5,7 @@
     android:orientation="horizontal"
 	android:layout_gravity="center"
 	android:gravity="center" 
-	android:background="@color/layout_background">
+	android:background="@drawable/carregando" android:clickable="false">
 
     <ProgressBar
         android:id="@+id/progressBar1"
@@ -21,7 +21,8 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
-        android:text="@string/carregando_mais_jogos" />
+        android:text="@string/carregando_mais_jogos"
+        android:textColor="@color/texto_carregando_mais_jogos" />
 
 
 </LinearLayout>

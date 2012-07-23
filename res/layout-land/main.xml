@@ -4,40 +4,45 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:gravity="center"
-    >
-	<RelativeLayout
-        android:id="@+id/rlTopTab"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/rlTopBar"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
         android:background="@drawable/topbar" >
 
         <ImageView
-            android:id="@+id/ivVejagol"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="3dp"
-            android:src="@drawable/icon" />
+            android:id="@+id/ivFacebook"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="110dp"
+            android:src="@drawable/facebook" 
+            android:clickable="true" 
+            android:focusable="false"/>
 
         <ImageView
-            android:id="@+id/ibShare"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/ivTwitter"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="15dp"
-            android:src="@drawable/share" />
-
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="110dp"
+            android:src="@drawable/twitter" 
+            android:clickable="true" 
+            android:focusable="false"/>
     </RelativeLayout>
-	<ListView android:layout_height="wrap_content" 
-		android:id="@+id/listaJogos" 
-		android:layout_width="fill_parent"
-		android:divider="@color/divider"
-		android:dividerHeight="3px"	
-		android:layout_weight="2">
-	</ListView>
 
+	<ListView android:id="@+id/listaJogos"
+		android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" 
+		android:layout_weight="2" 
+		android:divider="@color/divider"
+		android:dividerHeight="0px"	
+		android:cacheColorHint="#00000000"
+		android:background="@drawable/background">
+	</ListView>
 </LinearLayout>
